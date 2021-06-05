@@ -1,0 +1,48 @@
+Assign1: Due 11:59PM October 2
+
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning. You are not required, nor expected, to use all or any part of the design you created in hw2.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list (check in a tests.txt file) and a canary test. Implement at most two other tests, in addition to the canary test, and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+	We learned how to use Test First Development to steadily create our solution. Before taking this class, we would write our programs in its entirety before testing it, resulting in problems that we didn’t think to account for at the very end. However, using TDD allowed us to start off by first thinking of our test cases and then writing the code needed to make them pass. The goals that we set by writing those test cases allowed us to design our classes and functions more carefully to perfectly fit those goals.
+	We also learned how to refactor our code and make them as clean and minimal as possible. We made sure to include significant variable names and reduce noise by keeping only the absolute necessary code to make the test cases pass. By implementing these changes, we didn’t need to add as many comments as we would normally because the code became easier to read.
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+
+	Our previous design included different methods to access the cell positions. However, with our current design, we created a class called CellPosition with records as our data type and int x and int y as our parameters. This made the cell positions a lot easier to use across functions and the coding was a lot more concise. 
+	Another change we made was not using an isAlive() method as planned, but instead created a class for the cell state with enum as the data type.
+
+3. Were there any surprises or things you did not expect along the way? Any 
+particular problem faced, things you had to tackle that you did not expect 
+beforehand?
+
+	For this program, we had to use maps to keep track of the different cells and their positions. Initially, we had planned to use an array to store these positions, but found that maps was a more efficient way of completing this task. However, because we hadn’t used maps with Java before, there was a learning curve when it came to the different modifiers we could use with it. So we spent a lot more time learning how to implement maps then we had expected to.
+	This was also our first time doing unit testing, which required time to set up and to learn the different class types that we can use with the JUnit API. 
+
+Total [100]: 68
+Program runs as expected [20]: -20
+No GUI.
+
+All test pass [20]:
+Code coverage [10]: -2
+Need to check coverage.
+
+Test quality [10]: -5
+Need to make tests concise and expressive.
+
+Design quality [20]:
+
+Code quality [10]: -5
+Need to address and remove feedback notes from code.
+Need to refactor functions to make them concise.
+Use language conventions.
+
+Questions in assign1.txt [10]:
